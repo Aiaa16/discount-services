@@ -17,14 +17,12 @@ app.include_router(router_promotions)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:4001",
-        "http://192.168.100.32:4001",
+        "https://bleu-pos-eight.vercel.app", # pos frontend
         "http://localhost:9000",
         "http://localhost:9001",
         "http://localhost:4000",
-        "http://192.168.100.32:4000",
-        "http://192.168.100.14:4002",
-        "http://localhost:4002",
+        "https://bleu-ums.onrender.com", # auth service
+        "https://bleu-ums.vercel.app", # ums frontend
     ],
     allow_credentials=True,
     allow_methods=["*"],

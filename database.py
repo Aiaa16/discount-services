@@ -1,10 +1,10 @@
 import aioodbc
 
 # database config
-server = 'LAPTOP-8KPHOHE5\\SQLEXPRESS'
-database = 'POS'
-username = 'RanjelPOS'
-password = 'Ranjel123'
+server = 'retailauth.c3wegea8y1ra.ap-southeast-2.rds.amazonaws.com'
+database = 'bleuPOS'
+username = 'bleuadmin'
+password = 'Bleuauth123'
 driver = 'ODBC Driver 17 for SQL Server'
 
 # async function to get db connection
