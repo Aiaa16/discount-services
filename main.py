@@ -18,9 +18,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://bleu-pos-eight.vercel.app", # pos frontend
-        "http://localhost:9000",
-        "http://localhost:9001",
-        "http://localhost:4000",
+        "https://sales-service-bm35.onrender.com",
         "https://bleu-ums.onrender.com", # auth service
         "https://bleu-ums.vercel.app", # ums frontend
     ],
