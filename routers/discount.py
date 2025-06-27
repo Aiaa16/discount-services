@@ -16,15 +16,15 @@ from database import get_db_connection
 # =============================================================================
 # CONFIGURATION
 # =============================================================================
-EXTERNAL_PRODUCTS_API_URL = "https://product-services-1.onrender.com/is_products/products/details/" 
-AUTH_SERVICE_ME_URL = "https://bleu-ums.onrender.com/auth/users/me"
+EXTERNAL_PRODUCTS_API_URL = "http://127.0.0.1:8001/is_products/products/details/" 
+AUTH_SERVICE_ME_URL = "http://localhost:4000/auth/users/me"
 
 # =============================================================================
 # ROUTER SETUP & OAUTH2 SCHEME
 # =============================================================================
 router = APIRouter() 
 discounts_router = APIRouter(prefix="/discounts", tags=["Discounts"])
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="https://bleu-ums.onrender.com/auth/token")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="http://localhost:4000/auth/token")
 
 # =============================================================================
 # AUTHORIZATION HELPER
